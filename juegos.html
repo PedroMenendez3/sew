@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/icon">
+
+    <meta name="author" content="Pedro Menéndez Cerón" />
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026" />
+   
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+   <header>
+    <h1>
+        <a href="index.html" title="Página inicial">LaVuelta2026</a>
+    </h1>
+    <nav>
+        <a href="index.html" title="Página inicial">Inicio</a>
+        <a href="ciclista.html" title="Información del ciclista">Ciclista</a>
+        <a href="equipo.html" title="Información del equipo">Equipo</a>
+        <a href="etapa.html" title="Información de la etapa">Etapa</a>
+        <a href="meteorologia.html" title="Información de la meteorologia">Meteorologia</a>
+        <a href="clasificaciones.html" title="Información de las clasificaciones">Clasificaciones</a>
+        <a href="juegos.html" title="Juegos de la pagina" aria-current="page">Juegos</a>
+        <a href="ayuda.html" title="Ayuda de la pagina">Ayuda</a>
+    </nav>
+   </header>
+   <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html" title="Página inicial">Inicio</a></li>
+            <li> | </li>
+            <li>Juegos</li>
+        </ol>
+   </nav>
+   <main>
+        <h2>
+            Juegos
+        </h2>
+        <h3>
+            ¿Conoces la etapa?
+        </h3>
+        <p>Este es un juego de 10 preguntas sobre información de la etapa</p>
+        <form>
+            <fieldset>
+                <legend>Juego sobre la etapa</legend>
+                <p>
+                    <label for="numero">Numero: </label>
+                    <input id="numero" type="number" min="1" max="21"/>
+                </p>
+                <p>
+                    <label for="fecha">Fecha: </label>
+                    <input id="fecha" type="date" min="2026-08-22" max="2026-09-13"/>
+                </p>
+                <p>
+                    <label for="ciudad_salida">Ciudad de salida: </label>
+                    <select id="ciudad_salida">
+                        <option>Seleccione una opcion</option>
+                        <option>Monaco</option>
+                        <option>Alcossebre</option>
+                        <option>Castelló</option>
+                        <option>Granada</option>
+                        <option>Jaén</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="ciudad_llegada">Ciudad de llegada: </label>
+                    <select id="ciudad_llegada">
+                        <option>Seleccione una opcion</option>
+                        <option>Lorca</option>
+                        <option>Alcossebre</option>
+                        <option>Castelló</option>
+                        <option>Granada</option>
+                        <option>Sevilla</option>
+                    </select>
+                </p>
+                <p>
+                    Tipo de etapa:
+                    <input id="tipo_llana" type="radio" name="tipo_etapa"/>
+                    <label for="tipo_llana">Llana</label>
+                    
+                    <input id="tipo_media_montana" type="radio" name="tipo_etapa"/>
+                    <label for="tipo_media_montana">Media montaña</label>
+                    
+                    <input id="tipo_montana" type="radio" name="tipo_etapa"/>
+                    <label for="tipo_montana">montaña</label>
+                    
+                    <input id="tipo_contrarreloj_individual" type="radio" name="tipo_etapa"/>
+                    <label for="tipo_contrarreloj_individual">Contrarreloj individual</label>
+                    
+                    <input id="tipo_contrarreloj_equipos" type="radio" name="tipo_etapa"/>
+                    <label for="tipo_contrarreloj_equipos">Contrarreloj por equipos</label>
+                </p>
+                <p>Hitos de la etapa:
+                    <input id="puerto_montana" type="checkbox" name="hitos"/>
+                    <label for="puerto_montana">Puerto de montaña</label>
+                    
+                    <input id="puerto_especial" type="checkbox" name="hitos"/>
+                    <label for="puerto_especial">Puerto categoría especial</label>
+                    
+                    <input id="sprint_intermedio" type="checkbox" name="hitos"/>
+                    <label for="sprint_intermedio">Sprint intermedio</label>
+                    
+                    <input id="sprint_bonificado" type="checkbox" name="hitos"/>
+                    <label for="sprint_bonificado">Sprint bonificado</label>
+                    
+                    <input id="sin_hitos" type="checkbox" name="hitos"/>
+                    <label for="sin_hitos">Sin hitos</label>
+                </p>
+                <p>
+                    <label for="dureza">Dureza: </label>
+                    <input id="dureza" type="range" min="1" max="21"/>
+                </p>
+                <p>
+                    <label for="longitud">Longitud (Km): </label>
+                    <input id="longitud" type="number" min="0"/>
+                </p>
+                <p>
+                    <label for="desnivel">Desnivel (m): </label>
+                    <input id="desnivel" type="number" min="0"/>
+                </p>
+                <p>
+                    <label for="descripcion">Describe brevemente la etapa: </label>
+                    <textarea id="descripcion"></textarea>
+                </p>
+                <p>
+                    <label for="nombre_estudiante">Introduce tu nombre: </label>
+                    <input id="nombre_estudiante" type="text"/>
+                </p>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+   </main>
+    
+    <footer>
+        <p>Pedro Menéndez Cerón</p>
+        <address><a href="mailto:UO307004@uniovi.es">UO307004@uniovi.es</a></address>
+    </footer>
+</body>
+</html>

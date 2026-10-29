@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/icon">
+
+    <meta name="author" content="Pedro Menéndez Cerón" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+   <header>
+    <h1>
+        <a href="index.html" title="Página inicial">LaVuelta2026</a>
+    </h1>
+    <nav>
+        <a href="index.html" title="Página inicial">Inicio</a>
+        <a href="ciclista.html" title="Información del ciclista" aria-current="page">Ciclista</a>
+        <a href="equipo.html" title="Información del equipo">Equipo</a>
+        <a href="etapa.html" title="Información de la etapa">Etapa</a>
+        <a href="meteorologia.html" title="Información de la meteorologia">Meteorologia</a>
+        <a href="clasificaciones.html" title="Información de las clasificaciones">Clasificaciones</a>
+        <a href="juegos.html" title="Juegos de la pagina">Juegos</a>
+        <a href="ayuda.html" title="Ayuda de la pagina">Ayuda</a>
+    </nav>
+   </header>
+   <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html" title="Página inicial">Inicio</a></li>
+            <li> | </li>
+            <li>Ciclista</li>
+        </ol>
+   </nav>
+   <main>
+        <h2>
+            Moritz Kretschy
+        </h2>
+        <section>
+            <h3>
+                Datos personales
+            </h3>
+            <ul>
+                <li>Moritz Kretschy</li>
+                <li>12/05/2002</li>
+                <li>Alemania</li>
+                <li>NSN Cycling Team</li>
+                <li>Nº115</li>
+            </ul>
+            <picture>
+                <source media="(max-width: 768px)" srcset="multimedia/Moritz-mobile.png" width="150" height="227"/>
+                <source media="(max-width: 1024px)" srcset="multimedia/Moritz-tablet.png" width="225" height="341"/>
+                <img src="multimedia/Moritz.png" alt="Imagen de Moritz Kretschy" width="300" height="455"/>
+            </picture>
+            
+        </section>
+        <section>
+            <h3>
+                Datos equipos
+            </h3>
+            <ol>
+                <li>NSN Cycling Team</li>
+                <li>Israel Premier Tech Academy</li>
+                <li>Rad-Net Oßwald</li>
+                <li>Rad-Net Rose Team</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <tr>
+                    <th scope="col" id="dato">Nombre del dato</th>
+                    <th scope="col" id="resultado">Resultado</th>
+                </tr>
+                <tr>
+                    <td headers="dato">Podios</td>
+                    <td headers="resultado">12</td>
+                </tr>
+                <tr>
+                    <td headers="dato">Victorias</td>
+                    <td headers="resultado">5</td>
+                </tr>
+                <tr>
+                    <td headers="dato">Clasificacion 4ª etapa Alpes Isère Tour</td>
+                    <td headers="resultado">1º</td>
+                </tr>
+                <tr>
+                    <td headers="dato">Clasificacion Tour de Taiwan</td>
+                    <td headers="resultado">2º</td>
+                </tr>
+                <tr>
+                    <td headers="dato">Clasificacion 2ª etapa Tour de Taiwan</td>
+                    <td headers="resultado">3º</td>
+                </tr>
+                <tr>
+                    <td headers="dato">Clasificacion 2ª etapa Tour de Taiwan</td>
+                    <td headers="resultado">4º</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Multimedia</h3>
+            <p>Equipo <a href="https://www.lavuelta.es/es/equipo/NSN/nsn-cycling-team">NSN Cycling Team</a> en la Vuelta Ciclista a España 2026</p>
+            <video controls poster="multimedia/poster-presentacion.png">
+                <source src="multimedia/presentacion-equipo.mp4" type="video/mp4" />
+                <source src="multimedia/presentacion-equipo.webm" type="video/webm" />
+            </video>
+            <audio controls>
+                <source src="multimedia/historia-equipo.mp3" type="audio/mp3" />
+                <source src="multimedia/historia-equipo.wav" type="audio/wav" />
+            </audio>
+        </section>
+   </main>
+    
+
+    <footer>
+        <p>Pedro Menéndez Cerón</p>
+        <address><a href="mailto:UO307004@uniovi.es">UO307004@uniovi.es</a></address>
+    </footer>
+</body>
+</html>
