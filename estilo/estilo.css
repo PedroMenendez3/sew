@@ -100,3 +100,8 @@ section:has(picture) > ul > li:nth-child(3){
 section:has(picture) > ul > li:nth-child(4){
     font-weight: bold;
 }
+
+video{
+    max-width: 100%;
+    height: auto;
+}
